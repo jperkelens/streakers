@@ -1,0 +1,11 @@
+!!! 5
+
+html
+  head
+    link(rel="stylesheet", href="style.css")
+  body
+    #wall
+      h1 Streakers Wall
+      - each post in wall
+        .post
+          p #{post.message}

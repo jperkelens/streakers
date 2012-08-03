@@ -1,0 +1,19 @@
+{
+  "author": "streakers",
+  "name": "streakers",
+  "description": "For people who want to streak",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jperkelens/streakers.git"
+  },
+  "dependencies": {
+    "express": "~3.0.0rc1",
+    "jade": "~0.26.0"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

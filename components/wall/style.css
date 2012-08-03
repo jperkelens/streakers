@@ -1,0 +1,21 @@
+body {
+  background-color: #FAFAFA;
+}
+
+#wall h1 {
+  font-weight: 400;
+}
+
+#wall .post {
+  float: left;
+  width: 178px;
+  height: 178px;
+  border: 1px solid #DDD;
+  background: #EFEFEF;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+#wall .post p {
+  font-size: 14px;
+}
