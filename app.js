@@ -3,13 +3,10 @@ var express = require("express")
 
 app.engine("jade", require("jade").__express)
 
-app.component = function(component){
-  return function(req, res, next){
-    app.set("views", __dirname + "/components/" + component)
-    app.use(express.static(__dirname + "/components/" + component))
-    next()
-  }
-}
+app.configure(function(){
+  app.set("views", __dirname + "/components/")
+  app.use(express.static(__dirname + "/components/"))
+})
 
 require("./components/wall")(app)
 require("./components/daps")(app)
