@@ -6,6 +6,7 @@ html
   body
     #wall
       h1 Streakers Wall
+      != components.create_post()
       each post in wall
         .post
           p #{post.message}
