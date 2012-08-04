@@ -1,5 +1,5 @@
 module.exports = function(app){
-  app.get("/daps", app.component("daps"), function(req, res){
-    res.render("index.jade")
+  app.get("/daps", function(req, res){
+    res.render("daps/index.jade")
   })
 }
