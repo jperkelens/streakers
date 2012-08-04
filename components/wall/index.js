@@ -5,7 +5,12 @@ module.exports = function(app){
     { message: "Peed myself" }
   ]
 
-  app.get("/", app.component("wall"), function(req, res){
-    res.render("index.jade", { wall: wall})
+  app.get("/", function(req, res){
+    res.render("wall/index.jade", {
+      wall: wall,
+      components: {
+        create_post: require("../create_post")(app)
+      }
+    })
   })
 }

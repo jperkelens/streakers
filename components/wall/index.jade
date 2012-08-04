@@ -1,11 +1,13 @@
-!!! 5
-
+!!!
 html
   head
-    link(rel="stylesheet", href="style.css")
+    title Streakers Wall
+    link(rel="stylesheet", href="wall/style.css")
+    link(rel="stylesheet", href="create_post/style.css")
   body
     #wall
       h1 Streakers Wall
-      - each post in wall
+      != components.create_post()
+      each post in wall
         .post
           p #{post.message}
