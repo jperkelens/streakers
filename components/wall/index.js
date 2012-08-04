@@ -6,6 +6,6 @@ module.exports = function(app){
   ]
 
   app.get("/", app.component("wall"), function(req, res){
-    res.render("index.jade", { wall: wall})
+    res.render("index.jade", { wall: wall })
   })
 }
